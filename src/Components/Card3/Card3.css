@@ -1,0 +1,108 @@
+.card-3{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 10px;
+}
+.card-3 .card-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-3 .card-details p{
+  font-size: 0.8em;
+}
+.store-card {
+  padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  .store-image{
+    flex-basis: 50%;
+    position: relative;
+  }
+  .store-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .store-info {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .store-name {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .store-location {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .store-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rating-score {
+    font-size: 1em;
+    color: #27ae60;
+    margin-right: 5px;
+  }
+  
+  .rating-comments {
+    font-size: 0.8em;
+    color: #7f8c8d;
+  }
+  
+  .store-offers {
+    margin-bottom: 10px;
+  }
+  
+  .offer-discount,
+  .offer-products {
+    display: block;
+    font-size: 0.7em;
+    color: #2c3e50;
+    margin: 5px 0;
+  }
+  
+  .store-verified {
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.383);
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #27ae60;
+  }
+  
+  .view-details-btn {
+    background-color: #e88d26;
+    color: #fff;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #2980b9;
+  }
+  
