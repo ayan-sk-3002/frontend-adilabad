@@ -5,6 +5,7 @@ import SearchBar from '../../Components/SearchBar/SearchBar'
 import image1 from '../../Components/Assets/Images/card1.png'
 import { category_data } from '../../data'
 import Card3 from '../../Components/Card3/Card3'
+import Card4 from '../../Components/Card4/Card4'
 
 const SubCategory = () => {
   return (
@@ -12,9 +13,9 @@ const SubCategory = () => {
         <Header title={"SubCategory"}/>
         <SearchBar/>
         {
-            category_data.map((e)=>{
+            category_data.map((e,i)=>{
                 
-            return <Card3 image={image1}/>
+            return (i===4?<Card4/>:<Card3 image={image1}/>)
             })
         }
     </div>
