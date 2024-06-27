@@ -15,7 +15,7 @@ const SubCategory = () => {
         {
             category_data.map((e,i)=>{
                 
-            return (i===4?<Card4/>:<Card3 image={image1}/>)
+            return (i===4?<Card4/>:<Card3 image={image1} id={i}/>)
             })
         }
     </div>

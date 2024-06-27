@@ -1,0 +1,30 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-profile{
+    width: 100%;
+    padding: 20px;
+}
+.profile-card{
+    width: 100%;
+    background: #F4C095;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-pic img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.detail p{
+    font-size: 0.8em;
+    font-weight: 700;
+}

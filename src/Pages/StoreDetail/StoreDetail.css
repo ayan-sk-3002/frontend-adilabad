@@ -1,0 +1,63 @@
+.store-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slider{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.image{
+    width: auto;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+.arrow{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.store-info{
+    width: 100%;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.head-detail{
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+}
+.store-info .profile-pic{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+.name-detail {
+    margin-left: 10px;
+}
+.name-detail h4{
+line-height: 20px;
+font-size: 1.2em;
+}
+.name-detail p{
+    font-weight: 500;
+font-size: 0.8em;
+}
+.follow-btn{
+    background: #000;
+    padding: 5px 40px;
+    color: #fff;
+    border-radius: 20px;
+}

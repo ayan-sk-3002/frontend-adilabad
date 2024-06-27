@@ -14,7 +14,7 @@ const BottomNav = () => {
         <p>Home</p>
     </div>
     </Link>
-    <Link  to={"/"}>
+    <Link  to={"/notification"}>
         <div className="single-box">
             <img src={notification} alt="" />
             <p>Notification</p>
@@ -26,7 +26,7 @@ const BottomNav = () => {
             <p>My Orders</p>
         </div>
     </Link>
-    <Link  to={"/"}>
+    <Link  to={"/profile"}>
         <div className="single-box">
             <img src={profile} alt="" />
             <p>My Profile</p>

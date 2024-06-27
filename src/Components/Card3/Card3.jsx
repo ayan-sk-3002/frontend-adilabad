@@ -1,6 +1,12 @@
 import React from 'react'
 import '../Card3/Card3.css'
-const Card3 = ({image}) => {
+import { useNavigate } from 'react-router-dom';
+const Card3 = ({image,id}) => {
+  const navigate = useNavigate();
+
+  const storeDetail = (id)=>{
+    navigate(`/store-detail/${id}`)
+  }
     return (
       <div className="card-3">
    <div className="store-card">
@@ -22,7 +28,7 @@ const Card3 = ({image}) => {
               <span className="offer-products">🛒 12 Products Available</span>
             </div>
            
-            <button className="view-details-btn">View Details</button>
+            <button onClick={()=>storeDetail(id)} className="view-details-btn">View Details</button>
           </div>
         </div>
         <div className="card-details">
