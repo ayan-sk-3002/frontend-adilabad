@@ -7,8 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../Components/Assets/Images/card1.png'
 import image2 from '../../Components/Assets/Images/card2.png'
 import Footer from '../../Components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const StoreDetail = () => {
+    const navigate = useNavigate();
+  const goBack = ()=>{
+    navigate(-1);
+  }
     const settings = {
         dots: true,
         infinite: true,
@@ -30,7 +35,7 @@ const StoreDetail = () => {
                 <img src={image1} alt="" />
                 </div>
             </Slider>
-            <IoMdArrowBack className='arrow'/>
+            <IoMdArrowBack onClick={()=>goBack()} className='arrow'/>
         </div>
         <div className="store-info">
             <div className="head">

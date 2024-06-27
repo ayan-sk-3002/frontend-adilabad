@@ -23,17 +23,17 @@
     justify-content: start;
 
   }
-  .detail h4{
+  footer .detail h4{
     font-size: 0.9em;
   }
-  .detail p{
+  footer .detail p{
     font-size: 0.6em;
   }
-  .image{
+  footer .image{
     width: 2em;
     height: 2em;
   }
-  .logos{
+  footer .logos{
     
     gap: 10px;
     display: flex;
@@ -50,6 +50,6 @@
     margin: 20px 0;
   }
 
-  .copyright p{
+  footer .copyright p{
     font-size: 0.7em;
   }

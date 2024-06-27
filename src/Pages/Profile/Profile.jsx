@@ -3,6 +3,8 @@ import '../Profile/Profile.css'
 import Header from '../../Components/Header/Header'
 import image from '../../Components/Assets/Images/card2.png'
 import Footer from '../../Components/Footer/Footer'
+import { category_data } from '../../data'
+import {  IoCartOutline } from 'react-icons/io5'
 const Profile = () => {
   return (
     <div className='profile'>
@@ -18,6 +20,74 @@ const Profile = () => {
             <img src={image} alt="" />
             </div>
 
+        </div>
+        <div className="search-history">
+         <div className="title">
+          <p>Search History</p>
+          <p>see more <span>{">"}</span></p>
+         </div>
+        <div className="search-list">
+        {
+              category_data.map((e)=>{
+                return ( 
+                  <div className="searched-box">
+                    <img src={image} alt="" />
+                    <p>Product Name</p>
+                  </div>
+
+                )
+              })
+          }
+        </div>
+        </div>
+
+        <div className="saved search-history">
+         <div className="title">
+          <p>Saved (6)</p>
+          <p>see more <span>{">"}</span></p>
+         </div>
+        <div className="search-list">
+        {
+              category_data.map((e)=>{
+                return ( 
+                  <div className="searched-box">
+                    <img src={image} alt="" />
+                    <div className="details">
+                      
+                    <h5>Store Name</h5>
+                    <p>Other Detail</p>
+                    </div>
+                  </div>
+
+                )
+              })
+          }
+        </div>
+        </div>
+
+        <div className="my-order-history list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>My Order History {">>"}</h4>
+        </div>
+        <div className="list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>List My Business {">>"}</h4>
+        </div>
+        <div className="list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>Customer Service {">>"}</h4>
+        </div>
+        <div className="list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>Share the App {">>"}</h4>
+        </div>
+        <div className="list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>Rate Us {">>"}</h4>
+        </div>
+        <div className="list-profile">
+          <IoCartOutline className='icon'/>
+          <h4>About Us {">>"}</h4>
         </div>
        </div>
        <Footer/>
