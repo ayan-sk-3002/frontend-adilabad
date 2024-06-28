@@ -6,6 +6,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 5px;
   padding: 10px;
+  width: 100%;
 }
 .card-3 .card-details{
   display: flex;
@@ -14,6 +15,10 @@
 }
 .card-3 .card-details p{
   font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
 }
 .store-card {
   padding: 10px;
@@ -24,7 +29,7 @@
     font-family: Arial, sans-serif;
   }
   .store-image{
-    flex-basis: 50%;
+    flex-basis: 55%;
     position: relative;
   }
   .store-image img {
@@ -34,7 +39,7 @@
     object-fit: cover;
   }
   
-  .store-info {
+  .store-infos {
     padding: 15px;
     text-align: left;
   }
@@ -85,9 +90,20 @@
   bottom: 10px;
   background: rgba(0, 0, 0, 0.383);
     position: absolute;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding:5px 10px;
     margin-bottom: 10px;
-    font-size: 0.9em;
+    font-size: 1em;
+    left: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  .store-verified .icon-shield{
     color: #27ae60;
+    height: 50px;
+    margin: 0 5px;
   }
   
   .view-details-btn {

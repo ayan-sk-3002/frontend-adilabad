@@ -20,7 +20,7 @@ const BottomNav = () => {
             <p>Notification</p>
         </div>
     </Link>
-    <Link  to={"/"}>
+    <Link  to={"/order-history"}>
         <div className="single-box">
             <img src={order} alt="" />
             <p>My Orders</p>

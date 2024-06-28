@@ -1,22 +1,24 @@
 import React from 'react'
 import '../Card3/Card3.css'
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaShield } from 'react-icons/fa6';
 const Card3 = ({image,id}) => {
   const navigate = useNavigate();
 
   const storeDetail = (id)=>{
     navigate(`/store-detail/${id}`)
-  }
+  } 
     return (
       <div className="card-3">
    <div className="store-card">
           <div className="store-image">
             <img src={image} alt="Store" />
             <div className="store-verified">
-              <span>✅ Verified 3-jan-2024</span>
+              <FaShield className='icon-shield'/>
+              <span>Verified 3-jan-2024</span>
             </div>
           </div>
-          <div className="store-info">
+          <div className="store-infos">
             <h2 className="store-name">Quantum Brize Store</h2>
             <p className="store-location">📍 Ula, Howrah, Kolkata</p>
             <div className="store-rating">
@@ -32,7 +34,7 @@ const Card3 = ({image,id}) => {
           </div>
         </div>
         <div className="card-details">
-          <p>624323 views</p>
+          <p><FaEye/>624323 views</p>
           <p>20 calls</p>
           <p>18 chats</p>
           <p>12 orders</p>

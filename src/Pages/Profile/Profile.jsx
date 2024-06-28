@@ -5,7 +5,12 @@ import image from '../../Components/Assets/Images/card2.png'
 import Footer from '../../Components/Footer/Footer'
 import { category_data } from '../../data'
 import {  IoCartOutline } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom'
 const Profile = () => {
+  const navigate = useNavigate();
+  const goTo = (location)=>{
+    navigate(location);
+  }
   return (
     <div className='profile'>
         <Header title={"Profile"}/>
@@ -65,7 +70,7 @@ const Profile = () => {
         </div>
         </div>
 
-        <div className="my-order-history list-profile">
+        <div onClick={()=>goTo("/order-history")} className="my-order-history list-profile">
           <IoCartOutline className='icon'/>
           <h4>My Order History {">>"}</h4>
         </div>

@@ -61,3 +61,64 @@ font-size: 0.8em;
     color: #fff;
     border-radius: 20px;
 }
+.store-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.store-actions .details{
+    flex: 1;
+}
+.store-actions .details p{
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.store-actions .actions{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.4em;
+}
+.store-actions .actions .heart{
+    color: red;
+}
+.store-detail-des{
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+.store-detail-des h2{
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.store-detail-des h2 .verified-icon{
+    color: green;
+}
+
+.store-detail-des .description{
+    padding: 10px;
+}
+.store-detail-des .description p{
+    font-size: 1em;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+.store-detail-des .description .location{
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+.store-detail-des .description .location .location-icon{
+    color: red;
+}

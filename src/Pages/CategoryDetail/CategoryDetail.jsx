@@ -18,7 +18,7 @@ const CategoryDetail = () => {
         <SearchBar/>
         <div className="sub-category">
        { category_data.map((e,i)=>{
-            return <Card2 image={i%2===0?image1:image2} name={e.name} amount={e.sub_category}/>
+            return <Card2 image={i%3===0?image1:image2} name={e.name} amount={e.sub_category}/>
           })}
         </div>
     </div>

@@ -7,6 +7,7 @@ import SubCategory from './Pages/SubCategory/SubCategory'
 import StoreDetail from './Pages/StoreDetail/StoreDetail'
 import Profile from './Pages/Profile/Profile'
 import Notification from './Pages/Notification/Notification'
+import OrderHistory from './Pages/OrderHistory/OrderHistory'
 const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const App = () => {
       <Route path={'/store-detail/:id'} element={<StoreDetail/>} />
       <Route path={'/profile'} element={<Profile/>} />
       <Route path={'/notification'} element={<Notification/>} />
+      <Route path={'/order-history'} element={<OrderHistory/>} />
 
       </Routes>
       
