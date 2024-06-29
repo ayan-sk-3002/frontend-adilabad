@@ -3,7 +3,6 @@ import vector2 from '../src/Components/Assets/Images/Vector1.png'
 import vector3 from '../src/Components/Assets/Images/Vector2.png'
 import vector4 from '../src/Components/Assets/Images/Vector3.png'
 import vector5 from '../src/Components/Assets/Images/Vector4.png'
-import vector6 from '../src/Components/Assets/Images/Vector5.png'
 
 
 export const category_data = [

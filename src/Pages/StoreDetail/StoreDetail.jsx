@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../Components/Assets/Images/card1.png'
 import image2 from '../../Components/Assets/Images/card2.png'
 import Footer from '../../Components/Footer/Footer';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaHeart, FaLocationPin, FaStar } from 'react-icons/fa6';
 import { CiShare2 } from 'react-icons/ci';
 import fb from '../../Components/Assets/Images/fb.png'
@@ -88,7 +88,7 @@ const StoreDetail = () => {
             <button>Send Enquiry</button>
             <h6 className='enquired-text'> <MdOutlinePeopleOutline className='enquired-icon'/> 4 people enquired </h6>
             </div>
-              </div>
+              </div> 
               </div>
 
               {/* icons */}
@@ -156,11 +156,11 @@ const StoreDetail = () => {
                 <p>Products/Services(6)</p>
                 <div className="products">
                   {
-                    category_data.map((e)=>{
-                     return <div onClick={()=>toggleImage()} className="product-item">
+                    category_data.map((e,i)=>{
+                     return <Link to={`/product-service/${i}`} onClick={()=>toggleImage()} className="product-item">
                         <img src={image1} alt="" />
                         <p>$ 250.00 (5% OFF)</p>
-                      </div>
+                      </Link>
                     })
                   }
                 </div>
