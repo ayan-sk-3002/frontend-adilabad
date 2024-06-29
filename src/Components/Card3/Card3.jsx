@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Card3/Card3.css'
 import { useNavigate } from 'react-router-dom';
-import { FaEye, FaShield } from 'react-icons/fa6';
+import { FaEye, FaLocationPin, FaShield, FaStar } from 'react-icons/fa6';
 const Card3 = ({image,id}) => {
   const navigate = useNavigate();
 
@@ -20,9 +20,9 @@ const Card3 = ({image,id}) => {
           </div>
           <div className="store-infos">
             <h2 className="store-name">Quantum Brize Store</h2>
-            <p className="store-location">📍 Ula, Howrah, Kolkata</p>
+            <p className="store-location"><FaLocationPin/> Ula, Howrah, Kolkata</p>
             <div className="store-rating">
-              <span className="rating-score">4.9</span>
+              <span className="rating-score">4.9 <FaStar/> </span>
               <span className="rating-comments">6 Comments</span>
             </div>
             <div className="store-offers">
@@ -34,7 +34,7 @@ const Card3 = ({image,id}) => {
           </div>
         </div>
         <div className="card-details">
-          <p><FaEye/>624323 views</p>
+          <p><FaEye/>624323 views</p> 
           <p>20 calls</p>
           <p>18 chats</p>
           <p>12 orders</p>

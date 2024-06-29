@@ -29,7 +29,8 @@
     font-family: Arial, sans-serif;
   }
   .store-image{
-    flex-basis: 55%;
+    flex-basis: 50%;
+    margin: 10px 0;
     position: relative;
   }
   .store-image img {
@@ -53,7 +54,8 @@
   
   .store-location {
     color: #e74c3c;
-    font-size: 0.9em;
+    font-size: 0.75em;
+    font-weight: 700;
     margin-bottom: 10px;
   }
   
@@ -64,21 +66,36 @@
   }
   
   .rating-score {
-    font-size: 1em;
-    color: #27ae60;
+    font-size: 0.8em;
+    background: #27ae60;
+    color: #fff;
+    border-radius: 3px;
+    gap: 5px;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 5px;
   }
   
   .rating-comments {
     font-size: 0.8em;
-    color: #7f8c8d;
+    color: #828282;
+    font-weight: 550;
   }
   
   .store-offers {
     margin-bottom: 10px;
   }
   
-  .offer-discount,
+  .offer-discount{
+    
+    display: block;
+    font-size: 0.7em;
+    color: #2c3e50;
+    font-weight: 700;
+    margin: 5px 0;
+  }
   .offer-products {
     display: block;
     font-size: 0.7em;
@@ -95,10 +112,11 @@
     align-items: center;
     padding:5px 10px;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
     left: 10px;
     border-radius: 8px;
     color: #ffffff;
+    font-weight: 700;
   }
   .store-verified .icon-shield{
     color: #27ae60;
