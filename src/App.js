@@ -9,13 +9,11 @@ import Profile from './Pages/Profile/Profile'
 import Notification from './Pages/Notification/Notification'
 import OrderHistory from './Pages/OrderHistory/OrderHistory'
 import ProductService from './Pages/ProductService/ProductService'
-import Feedback from './Components/Feedback/Feedback'
 const App = () => {
   const [feedbackOn,setFeedbackOn] = useState(false)
   return (
     <div>
       <BrowserRouter>
-      <Feedback feedbackOn={feedbackOn} setFeedbackOn={setFeedbackOn}/>
       <Routes>
       <Route path={'/'} element={<Category/>} />
       <Route path={'/category-detail'} element={<CategoryDetail/>} />

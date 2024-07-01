@@ -15,7 +15,17 @@
     flex-direction: column;
     transition: bottom 0.3s ease-in-out; /* Add transition for the bottom property */
   }
-  
+  .feedback .close-btn{
+    align-self: flex-end;
+    background: #000000a4;
+    padding: 8px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .feedback.active {
     bottom: 0; /* Slide into view */
   }

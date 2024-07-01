@@ -10,6 +10,7 @@ import { category_data } from '../../data'
 import image1 from '../../Components/Assets/Images/card1.png'
 import { MdOutlinePeopleOutline } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
+import Feedback from '../../Components/Feedback/Feedback'
 const ProductService = ({feedbackOn,setFeedbackOn}) => {
     const toogleFeedback = ()=>{
 setFeedbackOn(prevfeedbackOn => !prevfeedbackOn);
@@ -20,6 +21,8 @@ setFeedbackOn(prevfeedbackOn => !prevfeedbackOn);
     }
   return (
     <div className='product-service'>
+        
+      <Feedback feedbackOn={feedbackOn} setFeedbackOn={setFeedbackOn}/>
         <div className="header">
         <FaArrowLeft onClick={()=>goBack()} className='icons'/>
         <div className="title">
