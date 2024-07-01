@@ -15,9 +15,11 @@
 }
 .image-box{
     flex-basis: 45%;
+    
     margin-right: 10px;
 }
 .image-box img{
+    height: 85%;
     width: 100%;
     margin: 5px 5px 0 5px;
     border-radius: 20px;
@@ -79,7 +81,7 @@ border-radius: 30px;
     border: 1px solid red;
     display: flex;
     align-items: center;
-    align-items: center;
+    justify-content: center;
 }
 .cart-change input{
     width: 30px;

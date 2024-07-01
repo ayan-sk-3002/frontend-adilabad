@@ -6,7 +6,7 @@ const Card2 = ({image, name, amount}) => {
     <Link to={"/sub-category"} className='card-2'>
         <img src={image} alt="" />
         <div className="detail">
-           <p>{name} ({amount})</p>
+           <p>{name} {" "} ({amount})</p>
         </div>
     </Link>
   )

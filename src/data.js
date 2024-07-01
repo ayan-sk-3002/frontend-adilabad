@@ -23,7 +23,7 @@ export const category_data = [
         sub_category: 7
     },
     {
-        image: vector4,
+        image: vector2,
         name: "Transport",
         sub_category: 0
     },

@@ -3,7 +3,7 @@ import './Feedback.css'
 import { FaArrowLeft, FaEye, FaStar } from 'react-icons/fa6'
 const Feedback = ({feedbackOn,setFeedbackOn}) => {
   return (
-    <div className={`feedback ${feedbackOn?"":"di-none"} `}>
+    <div className={`feedback ${feedbackOn?"":"active"} `}>
             <div className="feedback-text shadow">
                         Your Feedback Matters
                     </div>

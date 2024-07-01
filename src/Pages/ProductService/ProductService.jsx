@@ -69,7 +69,7 @@ setFeedbackOn(prevfeedbackOn => !prevfeedbackOn);
               <span className="rating-score">4.9 <FaStar/> </span>
               <span className="rating-comments">6 Comments</span>
             </div>
-                </div>:<Card6 image={image1} />
+            </div> : <Card6 image={image1} />
             })
         }
        </div>

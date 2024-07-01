@@ -91,7 +91,12 @@ const StoreDetail = () => {
               </div> 
               </div>
 
-              {/* icons */}
+              {/* icons */} 
+              <div className="discount">
+                <div className="discount-box">
+                   <p>✅ Discount offer up to <span>20%</span></p>
+                </div>
+              </div>
               <div className="icons-action">
                 <div className="cols">
                   <div className="icon-box">
@@ -140,7 +145,8 @@ const StoreDetail = () => {
               {/* gallery */}
               <div className="gallery">
                 <p>Gallery (6)</p>
-                <div className="gallery-images">
+             <div className="gallery-box">
+             <div className="gallery-images">
                   {
                     category_data.map((e)=>{
                      return <div onClick={()=>toggleImage()} className="image-show">
@@ -149,6 +155,7 @@ const StoreDetail = () => {
                     })
                   }
                 </div>
+             </div>
               </div>
               {/* products */}
               
@@ -174,19 +181,20 @@ const StoreDetail = () => {
          
              
             </div>     {/* similar store */}
+          
             <div className="similar-store">
-                <div className="heading">
-                  <h4>Similar Store (56)</h4>
-                  <p>See all {'>'}</p>
-                </div>
-                <div className="list-stores">
-                  {
-                    category_data.map((e,i)=>{
-                      return<Card3 image={image1} id={i}/>
-                    })
-                  }
-                </div>
-              </div>
+  <div className="heading">
+    <h4>Similar Store (56)</h4>
+    <p>See all {'>'}</p>
+  </div>
+  <div className="list-stores">
+    {
+      category_data.map((e, i) => (
+        <Card3 key={i} image={image1} id={i} className="card-3" />
+      ))
+    }
+  </div>
+</div>
         </div>
         <Footer/>
     </div>

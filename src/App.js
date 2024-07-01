@@ -28,7 +28,7 @@ const App = () => {
       
       </Routes>
       
-      <BottomNav/>
+       <BottomNav/>
       </BrowserRouter>
     </div>
   )

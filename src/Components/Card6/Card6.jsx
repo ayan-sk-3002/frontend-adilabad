@@ -7,12 +7,11 @@ const Card6 = ({image}) => {
   return (
     <div className='card-6'>
         <div className="upper-box">
-        <div className="image-box">
+        <div className="image-box"> 
             <img src={image} alt="" />
         </div>
         <div className="product-details">
             <h5>Product Name</h5>
-            <p>Store Name</p>
             <p className='offer-price'>$250.00 <span>(-5% oFF)</span> </p>
             <p className='original-price'>MRP <span>200.00</span> </p>
        

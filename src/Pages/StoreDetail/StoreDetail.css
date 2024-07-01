@@ -10,7 +10,7 @@
 }
 .image{
     width: auto;
-    height: 30vh;
+    height: 25vh;
     object-fit: cover;
     object-position: center;
 }
@@ -178,6 +178,23 @@ font-size: 0.8em;
   .enquiries .enquired-icon{
     color: rgb(0, 130, 224);
   }
+
+  .discount{
+    width: 100vw;
+    margin: -20px 0 20px 0 
+  }
+  .discount-box{
+    background: #ffe6e6;
+    padding: 5px 10px;
+    display: inline-flex;
+  }
+  .discount-box p{
+    font-size: 0.9em;
+  }
+  .discount-box p span{
+    color: red;
+    font-weight: 600;
+  }
   .icons-action{
     display: flex;
     align-items: center;
@@ -187,7 +204,7 @@ font-size: 0.8em;
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
   }
   .icons-action .cols .icon-box{
     gap: 10px;
@@ -201,32 +218,38 @@ font-size: 0.8em;
   }
   .icons-action .cols .icon-box p{
     font-size: 0.8em;
-  }
-  .gallery{
+  }.gallery {
     display: flex;
     align-items: start;
     flex-direction: column;
-    overflow-x: scroll;
+    width: 100%; /* Ensure the gallery container takes the full width */
   }
-  .gallery-images{
-    display: flex;
+  
+  .gallery-box {
+    overflow-x: scroll;
+    width: 100%; /* Ensure the box takes the full width */
+  }
+  
+  .gallery-images {
+    display: inline-flex; 
     align-items: start;
     flex-direction: row;
+    white-space: nowrap; 
   }
-  .image-show img{
-    width: 8em;
+  
+  .image-show img {
+    width: 9em;
     border-radius: 8px;
     margin: 10px;
   }
-
-  .image-showing{
+  
+  .image-showing {
     height: 100vh;
     width: 100vw;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 999999;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,25 +272,31 @@ font-size: 0.8em;
   }
 
   
-  .product-list{
+  .product-list {
     display: flex;
     align-items: start;
     flex-direction: column;
-    overflow-x: scroll;
     margin-top: 10px;
+    width: 100%; /* Ensure the product-list container takes the full width */
   }
-  .products{
-    display: flex;
+  
+  .products {
+    display: inline-flex; /* Use inline-flex to allow horizontal scroll */
+    overflow-x: scroll;
     align-items: start;
     flex-direction: row;
+    white-space: nowrap; /* Prevent line breaks */
+    width: 100%; /* Ensure the products container takes the full width */
   }
-  .product-item{
-    display: flex;
+  
+  .product-item {
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
   }
-  .product-item img{
-    width: 8em;
+  
+  .product-item img {
+    width: 9em;
     border-radius: 8px;
     margin: 10px;
   }
@@ -292,10 +321,24 @@ font-size: 0.8em;
     padding-bottom: 20px;
     border-bottom: 1px solid #000;
   }
-.similar-store .heading{
+  
+  .similar-store .heading {
     display: flex;
     align-items: center;
     margin-top: 20px;
     padding: 0 20px;
     justify-content: space-between;
-}
+  }
+  
+  .similar-store .list-stores {
+    display: flex;
+    overflow-x: scroll; /* Use overflow-x for horizontal scrolling */
+    flex-wrap: nowrap;
+    padding:  20px 0; /* Add some padding if needed */
+  }
+  
+  .similar-store .list-stores .card-3 {
+    min-width: 460px;
+    flex: 1; /* Ensure cards don't shrink or grow */
+  }
+  
